@@ -14,7 +14,7 @@ public class Missle : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    void Update()  
     {
         //transform.Translate(speed * Time.deltaTime, 0, 0);
     }
@@ -27,5 +27,9 @@ public class Missle : MonoBehaviour
     {
         Debug.Log("missile contact");
         Destroy(gameObject);
+    }
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        Debug.Log("missle trigger");
     }
 }
