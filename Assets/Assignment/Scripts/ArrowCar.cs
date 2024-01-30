@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 
@@ -37,6 +38,6 @@ public class ArrowCar : MonoBehaviour
             Vector2 force = (transform.right * speed * Time.deltaTime);
             rb2d.AddForce(force);
         }
-
+        
     }
 }
