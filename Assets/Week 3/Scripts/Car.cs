@@ -28,7 +28,7 @@ public class Car : MonoBehaviour
         Vector2 force = (transform.up * ForwardInput * forwardSpeed * Time.deltaTime);
         if (rigidbody.velocity.magnitude < maxSpeed)
         { 
-        rigidbody.AddForce(force);
+          rigidbody.AddForce(force);
         }
     }
 }
