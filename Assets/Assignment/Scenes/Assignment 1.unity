@@ -156,6 +156,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 400
+  haslost: 0
+  rWin: {fileID: 8003495549389156376, guid: 9e82721dd558a6e4daae255e8b361c62, type: 3}
+  rWinSpawn: {fileID: 683543803}
+  enemy: {fileID: 1417015489}
 --- !u!58 &160778490
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -445,6 +449,37 @@ MonoBehaviour:
   respawnB: {fileID: 1529395261}
   WASDBlue: {fileID: 160778488}
   ArrowRed: {fileID: 1417015489}
+--- !u!1 &683543803
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 683543804}
+  m_Layer: 0
+  m_Name: blueWinSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &683543804
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 683543803}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 7, y: 6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &793896613
 GameObject:
   m_ObjectHideFlags: 0
@@ -1434,6 +1469,37 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1044820090
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1044820091}
+  m_Layer: 0
+  m_Name: redWinSpawn
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1044820091
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1044820090}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7, y: 6, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1417015489
 GameObject:
   m_ObjectHideFlags: 0
@@ -1596,6 +1662,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 400
+  haslost: 0
+  bWin: {fileID: 2203305285156909973, guid: 2d3fa6b3d411da54da56042aef73dbad, type: 3}
+  bWinSpawn: {fileID: 1044820090}
+  enemy: {fileID: 160778488}
 --- !u!1 &1529395260
 GameObject:
   m_ObjectHideFlags: 0
@@ -3846,3 +3916,5 @@ SceneRoots:
   - {fileID: 300968804}
   - {fileID: 869387108}
   - {fileID: 1529395261}
+  - {fileID: 1044820091}
+  - {fileID: 683543804}
